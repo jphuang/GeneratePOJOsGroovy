@@ -53,7 +53,7 @@ def generateDO(table, out, className, fields) {
   out.println ""
   out.println "/**"
   out.println " * @author jphuang"
-  out.println " * @date " + new Date().format("yyyy/MM/dd HH:mm:ss")
+  out.println " * @date " + String.format('yyyy/MM/dd HH:mm:ss', new Date())
   out.println " * @description " + table.comment + " DO"
   out.println " */"
   out.println ""
@@ -85,7 +85,7 @@ def generateMapper(out, className,comment) {
   out.println ""
   out.println "/**"
   out.println " * @author jphuang"
-  out.println " * @date " + new Date().format("yyyy/MM/dd HH:mm:ss")
+  out.println " * @date " + String.format('yyyy/MM/dd HH:mm:ss', new Date())
   out.println " * @description " + comment +  " dao"
   out.println " */"
   out.println ""
